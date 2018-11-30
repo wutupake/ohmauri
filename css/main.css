@@ -1,22 +1,20 @@
+/* variables */
+:root {
+  /* colors */
+  --bg-light: var(--bg-light-override, rgb(192,224,215));
+}
+
+/* layout */
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
-:root {
-  --bg-light: rgb(192,224,215); /* lighter */
-  --bg-light2: rgb(175,218,209); /* vivid */
-  --bg-light3: rgb(179,209,200); /* almost grey */
-}
-
+/* theme */
 body {
-  background-color: var(--bg-light, #fff);
+  background-color: var(--bg-light);
 }
 
 .main-wrap {
@@ -29,4 +27,5 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: serif;
 }
