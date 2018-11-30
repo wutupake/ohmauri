@@ -9,12 +9,23 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  --bg-light: rgb(192,224,215); /* lighter */
+  --bg-light2: rgb(175,218,209); /* vivid */
+  --bg-light3: rgb(179,209,200); /* almost grey */
+}
+
+body {
+  background-color: var(--bg-light, #fff);
+}
+
 .main-wrap {
   max-width: 60em;
   margin: 0 auto;
   padding: 0 5%;
   width: 100vw;
-  height: 100vh;
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   align-items: center;
   justify-content: center;
